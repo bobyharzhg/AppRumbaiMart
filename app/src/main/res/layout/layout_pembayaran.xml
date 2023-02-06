@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="411dp"
+        android:layout_height="130dp"
+        android:foreground="@drawable/headerback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="139dp"
+        android:foreground="@drawable/headerfront"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="90dp"
+        android:foreground="@drawable/trolley"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="Rumbai Mart"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:text="Sembako daerah rumbai"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/btn_cart"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:foreground="@drawable/ic_cart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <ImageView
+        android:id="@+id/firebaseImage"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:foreground="@drawable/ic_cart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="Aplikasi pemesanan"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:text="Pembayaran"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/totals"
+        android:layout_width="164dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <TextView
+        android:layout_width="163dp"
+        android:layout_height="36dp"
+        android:text="Total Harga : "
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:visibility="invisible"
+        android:layout_width="338dp"
+        android:layout_height="224dp"
+        android:text="tess"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/emails"
+        android:visibility="invisible"
+        android:layout_width="388dp"
+        android:layout_height="219dp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <TextView
+        android:id="@+id/metode2"
+        android:visibility="invisible"
+        android:layout_width="388dp"
+        android:layout_height="219dp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <EditText
+        android:id="@+id/edt_alamat"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fileupload"
+        android:hint="Alamat"
+        android:textAlignment="center"
+        android:textColor="@color/greyfont"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <ImageView
+        android:layout_width="297dp"
+        android:layout_height="173dp"
+        android:foreground="@drawable/bg_rbgroup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="293dp"
+        android:layout_height="129dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fileupload"
+            android:backgroundTint="@color/grey"
+            android:text="OVO"
+            android:textSize="15dp"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fileupload"
+            android:backgroundTint="@color/grey"
+            android:text="GoPay"
+            android:textSize="15dp"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fileupload"
+            android:backgroundTint="@color/grey"
+            android:text="Dana"
+            android:textSize="15dp"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fileupload"
+            android:backgroundTint="@color/grey"
+            android:text="Bank"
+            android:textSize="15dp"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_bukti"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fileupload"
+        android:text="Bukti Pembayaran"
+        android:textAlignment="center"
+        android:textColor="@color/greyfont"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <Button
+        android:id="@+id/btn_kirim"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_green"
+        android:text="Kirim"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <TextView
+        android:layout_width="244dp"
+        android:layout_height="40dp"
+        android:text="Metode Pembayaran : "
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

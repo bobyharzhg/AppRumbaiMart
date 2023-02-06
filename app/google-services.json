@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308442423588",
+    "project_id": "apprumbaimart-1ac90",
+    "storage_bucket": "apprumbaimart-1ac90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308442423588:android:970012c92481f89a2c93b1",
+        "android_client_info": {
+          "package_name": "com.example.apprumbaimart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308442423588-bo0kpnfe2966s44depakc7pnve3i5d58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhRVRYVhTMSm2rtS0geinKlRwx72HiEiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308442423588-bo0kpnfe2966s44depakc7pnve3i5d58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

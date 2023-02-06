@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppRumbaiMart</string>
+    <string name="login">Login dengan akunmu</string>
+    <string name="produk">Produk</string>
+
+    <string name="pemesanan">Halaman Pemesanan</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="namaProduk">Nama Produk</string>
+    <string name="harga">Harga</string>
+</resources>
